@@ -42,6 +42,7 @@
         const link = d.createElement('a');
         link.href =  CH_STORY_URL + id[1];
         link.innerText = id[0];
+        link.setAttribute('target', '_blank');
 
         node.innerHTML = node.innerHTML.replace(id[0], htmlOf(link));
     };
