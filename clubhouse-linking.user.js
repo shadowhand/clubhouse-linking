@@ -55,11 +55,7 @@
             return; // Only operate on PRs and commits (for now)
         }
 
-        if (is_pull) {
-            const context = d.querySelector('.comment-body');
-        } else {
-            const context = d.querySelector('.commit-desc');
-        }
+        const context = is_pull ? d.querySelector('.comment-body') : d.querySelector('.full-commit');
 
         const nodes = query('.//text()[contains(., "[ch")]', context);
         nodes.forEach(update);
