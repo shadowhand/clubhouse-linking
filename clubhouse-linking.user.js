@@ -7,7 +7,7 @@
 // @datecreated  2016-11-02
 // @lastupdated  2016-11-02
 // @namespace    githubClubhouseLink
-// @version      0.1.0
+// @version      0.1.1
 // @include      http*://github.com/*/*
 // ==/UserScript==
 
